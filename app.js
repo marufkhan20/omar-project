@@ -40,6 +40,11 @@ if (process.env.NODE_ENV !== "production") {
 app.use("/", (req, res) => {
   res.render("/index.html");
 });
+app.get("/test", (req, res) => {
+  res.status(200).json({
+    message: "Test successful",
+  });
+});
 app.use("/api/v2/user", user);
 app.use("/api/v2/shop", shop);
 app.use("/api/v2/product", product);
