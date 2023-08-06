@@ -22,7 +22,7 @@ app.use(express.json({ limit: "20mb" }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://arinol-marketplace-725z-dvkr3uwhu-arinol.vercel.app"],
+    origin: ["https://omar-project.vercel.app"],
     credentials: true,
   })
 );
