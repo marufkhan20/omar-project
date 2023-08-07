@@ -26,7 +26,7 @@ app.use(
     credentials: true,
   })
 );
-app.use("/", express.static("public"));
+// app.use("/", express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true, limit: "100mb" }));
 
 // config
