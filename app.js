@@ -39,7 +39,7 @@ if (process.env.NODE_ENV !== "production") {
 // use routes
 app.get("/test", (req, res) => {
   res.status(200).json({
-    message: "Test successful",
+    message: "Test message",
   });
 });
 app.use("/api/v2/user", user);
