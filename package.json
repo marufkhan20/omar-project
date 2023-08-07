@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "socket": "node socket.js"
+    "socket": "node socket.js",
+    "vercel-build": "echo hello"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
