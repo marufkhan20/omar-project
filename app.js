@@ -52,9 +52,6 @@ app.use("/api/v2/order", order);
 app.use("/api/v2/conversation", conversation);
 app.use("/api/v2/message", message);
 app.use("/api/v2/withdraw", withdraw);
-app.use("*", (req, res) => {
-  res.render("/index.html");
-});
 app.use("/", (req, res) => {
   res.render("/index.html");
 });
