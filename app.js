@@ -37,9 +37,6 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 // use routes
-app.use("/", (req, res) => {
-  res.render("/index.html");
-});
 app.get("/test", (req, res) => {
   res.status(200).json({
     message: "Test successful",
@@ -56,6 +53,9 @@ app.use("/api/v2/conversation", conversation);
 app.use("/api/v2/message", message);
 app.use("/api/v2/withdraw", withdraw);
 app.use("*", (req, res) => {
+  res.render("/index.html");
+});
+app.use("/", (req, res) => {
   res.render("/index.html");
 });
 
